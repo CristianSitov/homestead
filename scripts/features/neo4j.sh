@@ -14,7 +14,7 @@ echo 'deb https://debian.neo4j.org/repo stable/' | sudo tee -a /etc/apt/sources.
 apt-get update
 
 # Install Neo4j Community Edition
-apt-get install -y neo4j
+apt-get install -y neo4j=1:3.5.14 cypher-shell=1.1.12
 
 # Stop Neo4j for configuration
 systemctl stop neo4j
