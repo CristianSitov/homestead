@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-if [ -f /home/vagrant/.homestead-features/neo4j ]
-then
+if [ -f /home/vagrant/.homestead-features/neo4j ]; then
+    echo "Neo4j prepare installation..."
+else
     echo "Neo4j already installed."
     exit 0
 fi
